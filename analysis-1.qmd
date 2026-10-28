@@ -1,8 +1,26 @@
 ---
-title: "Analysis 1"
+title: "A Beautiful Graphic"
 
-author: "kaitlin Powell"
+author: "Kaitlin Powell"
 format: html
+execute:
+  echo: false
 ---
 
 Kaitlin Powell is a data maestro!
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  labs(
+    title = "A Beautiful Graphic",
+    x = "Engine displacement",
+    y = "Highway miles per gallon",
+    color = "Vehicle class"
+  )
+```
