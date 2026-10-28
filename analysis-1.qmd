@@ -4,7 +4,5 @@ title: "Analysis 1"
 author: "kaitlin Powell"
 format: html
 ---
+
 Kaitlin Powell is a data maestro!
-
-
-
